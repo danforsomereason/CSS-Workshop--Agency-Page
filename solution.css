@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add styles here! */
+  :root{
+    --primary-green: hsl(160deg, 100%, 30%);
+    --secondary-gold-lighter: hsl(45deg, 100%, 50%);
+    --secondary-gold-darker: hsl(45deg, 100%, 40%);
+    --grayscale-black: hsl(0deg, 0%, 0%);
+    --grayscale-very-dark: hsl(0deg, 0%, 10%);
+    --grayscale-dark: hsl(0deg, 0%, 30%);
+    --grayscale-medium: hsl(0deg, 0%, 40%);
+    --grayscale-light: hsl(0deg, 0%, 60%);
+    --grayscale-white: hsl(0deg, 0%, 100%);
+  }
+
+  header {
+    border-bottom: 8px solid var(--grayscale-light);
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* overrule the final paragraph so that there isn't padding stacked with margin */
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .max-width-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 24px;
+  }
+
+  strong {
+    color: var(--primary-green);
+  }
+
+   /* Apply styles as close to the content as possible, when possible */
+   .intro-chunk {
+    max-width: 415px;
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
+ 
+  main {
+    background-color: var(--grayscale-medium);
+    padding: 64px 0;
+  }
+
+  .indented-heading{
+    width: fit-content;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0;
+    margin-left: -32px;
+    /* Why use pixels for top and rem for bottom?? */
+    /* If the user changes font size, it will adjust more cleanly for accessibility. */
+    margin-top: -16px;
+    margin-bottom: 1rem;
+    padding: 16px 32px;
+    background-color: var(--secondary-gold-lighter);
+    border-bottom: 8px solid var(--secondary-gold-darker)
+  }
+
+  .card {
+    background-color: white;
+    padding: 24px;
+    margin: 0 -24px; 
+    border-bottom: 8px solid var(--grayscale-light);
+  }   

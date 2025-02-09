@@ -44,6 +44,11 @@ strong {
   /* outline: 2px solid lime; */
 }
 
+/* Apply styles as close to the content as possible, when possible */
+.intro-chunk{
+  max-width: 415px;
+}
+
 main {
   background-color: var(--grayscale-medium);
   height: 400px;
@@ -56,9 +61,6 @@ main .max-width-wrapper {
 }
 
 .card {
-  /* padding: 8px 20px 0px; */
-  /* margin: 0px -20px; */
-  
   background-color: white;
   /* outline: 4px dotted red */
 }   
